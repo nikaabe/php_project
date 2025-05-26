@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitness Gym</title>
+  <style>
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(5, 5, 165, 0.596);
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://i.pinimg.com/736x/de/58/6d/de586d6c96914a240a0a6fde9818540a.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .feature {
+      background: white;
+      flex: 1 1 300px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    footer {
+      background-color: rgba(5, 5, 165, 0.596);;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">Fitness Gym</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Trainers</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Get Stronger, Feel Better</h1>
+  </section>
+
+  <section class="container features">
+    <div class="feature">
+      <h3>Personal Training</h3>
+      <p>Customized plans tailored to your goals and fitness level.</p>
+    </div>
+    <div class="feature">
+      <h3>Group Classes</h3>
+      <p>High energy classes including yoga, HIIT, and strength training.</p>
+    </div>
+    <div class="feature">
+      <h3>Modern Equipment</h3>
+      <p>Access to the latest fitness machines and technology.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>AB Fitness gym. Hop on now.</p>
+  </footer>
+
+</body>
+</html>
