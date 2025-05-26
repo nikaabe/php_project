@@ -30,6 +30,15 @@
       padding: 0 20px;
     }
 
+    /* Make header container a flex box to align items horizontally */
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     header .logo {
       font-size: 1.8rem;
       font-weight: bold;
@@ -37,6 +46,7 @@
 
     nav {
       margin-top: 10px;
+      flex-grow: 1;
     }
 
     nav ul {
@@ -44,6 +54,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      align-items: center;
     }
 
     nav a {
@@ -54,6 +65,38 @@
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    /* Sign In / Sign Up buttons */
+    header .btn-signin,
+    header .btn-signup {
+      color: white;
+      padding: 8px 15px;
+      margin-left: 15px;
+      border-radius: 4px;
+      font-weight: 600;
+      border: 2px solid white;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    header .btn-signin:hover {
+      background-color: white;
+      color: rgba(5, 5, 165, 0.596);
+    }
+
+    header .btn-signup {
+      background-color: #ff4c4c;
+      border-color: #ff4c4c;
+    }
+
+    header .btn-signup:hover {
+      background-color: #cc3b3b;
+      border-color: #cc3b3b;
+      color: white;
     }
 
     .hero {
@@ -94,7 +137,7 @@
     }
 
     footer {
-      background-color: rgba(5, 5, 165, 0.596);;
+      background-color: rgba(5, 5, 165, 0.596);
       color: white;
       text-align: center;
       padding: 15px 0;
@@ -105,6 +148,16 @@
       nav ul {
         flex-direction: column;
         gap: 10px;
+      }
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header .btn-signin,
+      header .btn-signup {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 8px 12px;
       }
       .hero h1 {
         font-size: 2rem;
@@ -129,6 +182,10 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <div>
+        <a href="#" class="btn-signin">Sign In</a>
+        <a href="#" class="btn-signup">Sign Up</a>
+      </div>
     </div>
   </header>
 
